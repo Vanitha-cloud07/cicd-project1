@@ -7,11 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
-            steps {
-                git branch: 'main', url: 'https://github.com/Vanitha-cloud07/cicd-project1.git'
-            }
-        }
 
         stage('Build Docker Image') {
             steps {
